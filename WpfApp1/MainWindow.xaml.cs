@@ -1,4 +1,8 @@
-﻿using System.Windows;
+﻿using System;
+using System.Threading;
+using System.Windows;
+using System.Windows.Controls;
+using System.Windows.Threading;
 
 namespace WpfApp1
 {
@@ -12,7 +16,26 @@ namespace WpfApp1
             InitializeComponent();
             _uc1 = new UserControl1();
             ContentControl.Content = _uc1;
-         }
+           // DelegateDate = DataUpdate;
+            WindowState = WindowState.Maximized;
+            tm = new TimerCallback(Data);
+            dateTimer = new Timer(tm, 0, 0, 1000);
+
+        }
+
+        private void Data(object state)
+        {
+            Dispatcher.BeginInvoke(new Action(Dadsata));
+        }
+
+        private void Dadsata()
+        {
+            LabelTime.Content = DateTime.Now.Hour.ToString("D2") + ":" + DateTime.Now.Minute.ToString("D2") + ":" + DateTime.Now.Second.ToString("D2");
+            LabelData.Content = DateTime.Now.Day.ToString("D2") + ":" + DateTime.Now.Month.ToString("D2") + ":" + DateTime.Now.Year;
+        }
+
+        private TimerCallback tm;
+        private Timer dateTimer;
 
         private UserControl2 _uc2;
         private UserControl1 _uc1;

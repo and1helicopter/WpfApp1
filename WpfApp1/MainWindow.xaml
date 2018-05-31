@@ -5,8 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800" MinHeight="450" MinWidth="800">
-    <Grid>
+        Title="MainWindow" >
+    <Grid >
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="25*"></ColumnDefinition>
             <ColumnDefinition Width="175*"></ColumnDefinition>
@@ -20,6 +20,30 @@
                 </LinearGradientBrush>
             </Button.BorderBrush>
         </Button>
-        <ContentControl Grid.Column="1" x:Name="ContentControl"></ContentControl>
+        <ContentControl Grid.Column="1" x:Name="ContentControl"/>
+        <Label Content="СЕВ" HorizontalContentAlignment="Center" Margin="10,0,10,70" Background="#FF44B012" Height="25" VerticalAlignment="Bottom">
+            <Label.Foreground>
+                <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ControlColorKey}}"/>
+            </Label.Foreground>
+            <Label.BorderBrush>
+                <SolidColorBrush Color="Black"/>
+            </Label.BorderBrush>
+        </Label>
+        <Label x:Name="LabelData" HorizontalContentAlignment="Center" Content="" Margin="10,0,10,40" Background="#FF44B012" VerticalAlignment="Bottom" Height="25">
+            <Label.OpacityMask>
+                <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ActiveCaptionTextColorKey}}"/>
+            </Label.OpacityMask>
+            <Label.BorderBrush>
+                <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ActiveCaptionTextColorKey}}"/>
+            </Label.BorderBrush>
+            <Label.Foreground>
+                <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ControlColorKey}}"/>
+            </Label.Foreground>
+        </Label>
+        <Label x:Name="LabelTime" HorizontalContentAlignment="Center" Content="" Margin="10,0,10,10" Background="#FF44B012" BorderBrush="Black" Height="25" VerticalAlignment="Bottom">
+            <Label.Foreground>
+                <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ControlColorKey}}"/>
+            </Label.Foreground>
+        </Label>
     </Grid>
 </Window>

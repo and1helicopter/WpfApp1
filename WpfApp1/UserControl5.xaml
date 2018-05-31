@@ -3,13 +3,83 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-             xmlns:local="clr-namespace:WpfApp1"
-             mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="800">
+             mc:Ignorable="d">
+    <UserControl.Background>
+        <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ControlLightLightColorKey}}"/>
+    </UserControl.Background>
     <Grid>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="55,65,0,0" VerticalAlignment="Top" Width="75"/>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="324,143,0,0" VerticalAlignment="Top" Width="75"/>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="575,302,0,0" VerticalAlignment="Top" Width="75"/>
+        <Grid.Background>
+            <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ControlLightColorKey}}"/>
+        </Grid.Background>
+        <Rectangle Fill="#FF4DB03D" Height="35" Margin="152,20,0,0" VerticalAlignment="Top" Width="100" HorizontalAlignment="Left">
+            <Rectangle.Stroke>
+                <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ScrollBarColorKey}}"/>
+            </Rectangle.Stroke>
+        </Rectangle>
+        <Canvas Margin="10" Background="{DynamicResource {x:Static SystemColors.ControlLightLightBrushKey}}" Panel.ZIndex="-1000" Height="581" VerticalAlignment="Top" HorizontalAlignment="Left" Width="439">
+            <Canvas Panel.ZIndex="11" Height="513" VerticalAlignment="Top" HorizontalAlignment="Left" Width="416" Canvas.Left="10" Canvas.Top="58">
+                <Canvas.Background>
+                    <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ControlLightColorKey}}"/>
+                </Canvas.Background>
+                <Canvas Canvas.Left="86" Canvas.Top="10" Height="119" Width="230">
+                    <Canvas.Background>
+                        <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.WindowColorKey}}"/>
+                    </Canvas.Background>
+                    <Rectangle Fill="#FF4DB03D" Width="50" Height="36" Canvas.Left="10" Canvas.Top="30">
+                        <Rectangle.Stroke>
+                            <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ScrollBarColorKey}}"/>
+                        </Rectangle.Stroke>
+                    </Rectangle>
+                    <TextBlock TextWrapping="Wrap" FontSize="24" Panel.ZIndex="10" Height="34" Width="106" VerticalAlignment="Top" HorizontalAlignment="Center" RenderTransformOrigin="0.411,-0.235" Canvas.Left="60" Canvas.Top="32"><Run Text="ПЭВ"/><Run Text="М БД"/></TextBlock>
+                </Canvas>
+                <Canvas Canvas.Left="86" Canvas.Top="134" Height="119" Width="230">
+                    <Canvas.Background>
+                        <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.WindowColorKey}}"/>
+                    </Canvas.Background>
+                    <Rectangle Fill="#FF4DB03D" Width="50" Height="36" Canvas.Left="10" Canvas.Top="30">
+                        <Rectangle.Stroke>
+                            <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ScrollBarColorKey}}"/>
+                        </Rectangle.Stroke>
+                    </Rectangle>
+                    <TextBlock TextWrapping="Wrap" FontSize="24" Panel.ZIndex="10" Height="34" Width="106" VerticalAlignment="Top" HorizontalAlignment="Center" RenderTransformOrigin="0.411,-0.235" Canvas.Left="60" Canvas.Top="32"><Run Text="ПЭВ"/><Run Text="М"/><Run Text="2"/></TextBlock>
+                </Canvas>
+                <Canvas Canvas.Left="86" Canvas.Top="10" Height="119" Width="230">
+                    <Canvas.Background>
+                        <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.WindowColorKey}}"/>
+                    </Canvas.Background>
+                    <Rectangle Fill="#FF4DB03D" Width="50" Height="36" Canvas.Left="10" Canvas.Top="30">
+                        <Rectangle.Stroke>
+                            <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ScrollBarColorKey}}"/>
+                        </Rectangle.Stroke>
+                    </Rectangle>
+                    <TextBlock TextWrapping="Wrap" FontSize="24" Panel.ZIndex="10" Height="34" Width="106" VerticalAlignment="Top" HorizontalAlignment="Center" RenderTransformOrigin="0.411,-0.235" Canvas.Left="60" Canvas.Top="32"><Run Text="ПЭВ"/><Run Text="М"/><Run Text="1"/></TextBlock>
+                </Canvas>
+                <Canvas Canvas.Left="86" Canvas.Top="258" Height="119" Width="230">
+                    <Canvas.Background>
+                        <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.WindowColorKey}}"/>
+                    </Canvas.Background>
+                    <Rectangle Fill="#FF4DB03D" Width="50" Height="36" Canvas.Left="10" Canvas.Top="30">
+                        <Rectangle.Stroke>
+                            <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ScrollBarColorKey}}"/>
+                        </Rectangle.Stroke>
+                    </Rectangle>
+                    <TextBlock TextWrapping="Wrap" FontSize="24" Panel.ZIndex="10" Height="34" Width="106" VerticalAlignment="Top" HorizontalAlignment="Center" RenderTransformOrigin="0.411,-0.235" Canvas.Left="60" Canvas.Top="32"><Run Text="ПЭВ"/><Run Text="М"/><Run Text="3"/></TextBlock>
+                </Canvas>
+                <Canvas Canvas.Left="86" Canvas.Top="382" Height="119" Width="230">
+                    <Canvas.Background>
+                        <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.WindowColorKey}}"/>
+                    </Canvas.Background>
+                    <Rectangle Fill="#FF4DB03D" Width="50" Height="36" Canvas.Left="10" Canvas.Top="30">
+                        <Rectangle.Stroke>
+                            <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ScrollBarColorKey}}"/>
+                        </Rectangle.Stroke>
+                    </Rectangle>
+                    <TextBlock TextWrapping="Wrap" FontSize="24" Panel.ZIndex="10" Height="34" Width="106" VerticalAlignment="Top" HorizontalAlignment="Center" RenderTransformOrigin="0.411,-0.235" Canvas.Left="60" Canvas.Top="32"><Run Text="ПЭВ"/><Run Text="М"/><Run Text="4"/></TextBlock>
+                </Canvas>
+            </Canvas>
+        </Canvas>
+        <TextBlock TextWrapping="Wrap" FontSize="24" Panel.ZIndex="10" Height="34" Margin="252,20,0,0" Width="70" VerticalAlignment="Top" HorizontalAlignment="Left" RenderTransformOrigin="0.411,-0.235"><Run Text="1"/><Run Text="УКТС"/></TextBlock>
 
     </Grid>
 </UserControl>
+

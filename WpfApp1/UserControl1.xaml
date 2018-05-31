@@ -4,24 +4,30 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:WpfApp1"
-             mc:Ignorable="d">
-    <Grid >
-        <Grid.RowDefinitions>
-            <RowDefinition Height="10"></RowDefinition>
-            <RowDefinition Height="347*"></RowDefinition>
-            <RowDefinition Height="10"></RowDefinition>
-        </Grid.RowDefinitions>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="10"></ColumnDefinition>
-            <ColumnDefinition  Width="100*"></ColumnDefinition>
-            <ColumnDefinition  Width="100*"></ColumnDefinition>
-            <ColumnDefinition  Width="10"></ColumnDefinition>
-        </Grid.ColumnDefinitions>
-
+             mc:Ignorable="d" >
+    <UserControl.Background>
+        <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.MenuBarColorKey}}"/>
+    </UserControl.Background>
+    <Grid Margin="10">
         <Grid.Background>
-            <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ControlColorKey}}"/>
+            <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.WindowColorKey}}"/>
         </Grid.Background>
-        <Button Content="ЧЗЧ" Margin="100,20,100,0" VerticalAlignment="Top" Grid.Row="1" Grid.Column="1" Height="35" Width="130" Background="#FFC10303">
+        <Button Content="1УКТС" Click="Button_Click_3" Height="35" VerticalAlignment="Top" Background="#FF4DB03D" Foreground="White" Margin="370,131,10,0" HorizontalAlignment="Left" Width="130">
+            <Button.BorderBrush>
+                <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ScrollBarColorKey}}"/>
+            </Button.BorderBrush>
+        </Button>
+        <Button Content="1У09С" Click="Button_Click_2" Height="35" VerticalAlignment="Top" Background="#FF4DB03D" Foreground="White" Margin="370,91,0,0" Width="130" HorizontalAlignment="Left">
+            <Button.BorderBrush>
+                <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ScrollBarColorKey}}"/>
+            </Button.BorderBrush>
+        </Button>
+        <Button Content="1У09У" Click="Button_Click_1" Height="35" VerticalAlignment="Top" Background="#FF4DB03D" Foreground="White" OpacityMask="Black" Margin="370,51,0,0" Width="130" HorizontalAlignment="Left">
+            <Button.BorderBrush>
+                <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ScrollBarColorKey}}"/>
+            </Button.BorderBrush>
+        </Button>
+        <Button Content="Начальное включение" VerticalAlignment="Top" IsCancel="True" Click="Button_Click" Height="35" HorizontalAlignment="Left" Width="130" Background="#FFC10303" Margin="10,50,0,0">
             <Button.Foreground>
                 <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ControlLightLightColorKey}}"/>
             </Button.Foreground>
@@ -29,62 +35,56 @@
                 <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ScrollBarColorKey}}"/>
             </Button.BorderBrush>
         </Button>
-        <Button Content="Начальное включение" Margin="20,60,0,0" VerticalAlignment="Top" IsCancel="True" Click="Button_Click" Height="35" Grid.Row="1" Grid.Column="1" HorizontalAlignment="Left" Width="129" Background="#FFC10303">
-            <Button.Foreground>
-                <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ControlLightLightColorKey}}"/>
-            </Button.Foreground>
-            <Button.BorderBrush>
+        <Rectangle Fill="#FFC10303" RenderTransformOrigin="0.438,0.6" Height="35" VerticalAlignment="Top" HorizontalAlignment="Left" Width="130" Margin="100,10,0,0">
+            <Rectangle.Stroke>
                 <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ScrollBarColorKey}}"/>
-            </Button.BorderBrush>
-        </Button>
-        <Button Content="1У09У" Margin="76,59,76,0" Click="Button_Click_1" Height="35" VerticalAlignment="Top" Grid.Row="1" Grid.Column="2" Width="100" Background="#FF4DB03D" Foreground="White" OpacityMask="Black">
-            <Button.BorderBrush>
+            </Rectangle.Stroke>
+        </Rectangle>
+        <Rectangle Fill="#FFC10303" VerticalAlignment="Top" Height="35" Width="130" HorizontalAlignment="Left" Margin="200,50,0,0">
+            <Rectangle.Stroke>
                 <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ScrollBarColorKey}}"/>
-            </Button.BorderBrush>
-        </Button>
-        <Button Content="1У09С" Margin="76,99,76,0" Click="Button_Click_2" Height="35" VerticalAlignment="Top" Grid.Row="1" Grid.Column="2" Background="#FF4DB03D" Foreground="White" Width="100">
-            <Button.BorderBrush>
+            </Rectangle.Stroke>
+        </Rectangle>
+        <Rectangle Fill="#FFC10303" Height="35" Width="130" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="200,90,0,0">
+            <Rectangle.Stroke>
                 <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ScrollBarColorKey}}"/>
-            </Button.BorderBrush>
-        </Button>
-        <Button Content="1УКТС" Margin="76,139,76,0" Click="Button_Click_3" Height="35" VerticalAlignment="Top" Grid.Row="1" Grid.Column="2" Background="#FF4DB03D" Foreground="White" Width="100">
-            <Button.BorderBrush>
+            </Rectangle.Stroke>
+        </Rectangle>
+        <Rectangle Fill="#FFC10303" Width="130" Height="35" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="200,130,0,0">
+            <Rectangle.Stroke>
                 <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ScrollBarColorKey}}"/>
-            </Button.BorderBrush>
-        </Button>
-        <Button Content="Б304" Margin="0,59,20,0" VerticalAlignment="Top" Height="35" Grid.Row="1" Grid.Column="1" RenderTransformOrigin="0.151,0.267" HorizontalAlignment="Right" Width="130" Background="#FFC10303">
-            <Button.Foreground>
-                <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ControlLightLightColorKey}}"/>
-            </Button.Foreground>
-            <Button.BorderBrush>
+            </Rectangle.Stroke>
+        </Rectangle>
+        <Rectangle Fill="#FFC10303" HorizontalAlignment="Left" Width="130" Height="35" VerticalAlignment="Top" Margin="200,170,0,0">
+            <Rectangle.Stroke>
                 <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ScrollBarColorKey}}"/>
-            </Button.BorderBrush>
-        </Button>
-        <Button Content="1У07ФМ" Margin="0,99,20,0" Grid.Row="1" Grid.Column="1" RenderTransformOrigin="0.151,0.267" Width="130" Height="35" VerticalAlignment="Top" HorizontalAlignment="Right" Background="#FFC10303" >
-            <Button.Foreground>
-                <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ControlLightLightColorKey}}"/>
-            </Button.Foreground>
-            <Button.BorderBrush>
-                <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ScrollBarColorKey}}"/>
-            </Button.BorderBrush>
-        </Button>
-        <Button Content="1У08ПУ" Margin="0,139,20,0" Grid.Row="1" Grid.Column="1" RenderTransformOrigin="0.151,0.267" Width="130" Height="35" VerticalAlignment="Top" HorizontalAlignment="Right" Background="#FFC10303">
-            <Button.Foreground>
-                <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ControlLightLightColorKey}}"/>
-            </Button.Foreground>
-            <Button.BorderBrush>
-                <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ScrollBarColorKey}}"/>
-            </Button.BorderBrush>
-        </Button>
-        <Button Content="1У07ФР" Margin="0,179,20,0" Grid.Row="1" Grid.Column="1" RenderTransformOrigin="0.151,0.267" Width="130" Height="35" VerticalAlignment="Top" HorizontalAlignment="Right" Background="#FFC10303">
-            <Button.Foreground>
-                <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ControlLightLightColorKey}}"/>
-            </Button.Foreground>
-            <Button.BorderBrush>
-                <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ScrollBarColorKey}}"/>
-            </Button.BorderBrush>
-        </Button>
-        <Canvas Grid.Column="1" Margin="10,10,10,0" Grid.Row="1" Background="{DynamicResource {x:Static SystemColors.ControlLightBrushKey}}" Panel.ZIndex="-997"/>
+            </Rectangle.Stroke>
+        </Rectangle>
+        <Label Content="ЧЗЧ" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Height="35" VerticalAlignment="Top" HorizontalAlignment="Left" Width="130" FontSize="16" Margin="100,10,0,0">
+            <Label.Foreground>
+                <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ControlColorKey}}"/>
+            </Label.Foreground>
+        </Label>
+        <Label Content="Б304" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Height="35" VerticalAlignment="Top" Width="130" HorizontalAlignment="Left" FontSize="16" Margin="200,50,0,0">
+            <Label.Foreground>
+                <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ControlColorKey}}"/>
+            </Label.Foreground>
+        </Label>
+        <Label Content="1У07ФМ" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Left" Width="130" Height="35" VerticalAlignment="Top" FontSize="16" Margin="200,90,0,0">
+            <Label.Foreground>
+                <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ControlColorKey}}"/>
+            </Label.Foreground>
+        </Label>
+        <Label Content="1У08ПУ" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="130" Height="35" VerticalAlignment="Top" HorizontalAlignment="Left" FontSize="16" Margin="200,132,0,0">
+            <Label.Foreground>
+                <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ControlColorKey}}"/>
+            </Label.Foreground>
+        </Label>
+        <Label Content="1У07ФР" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Height="35" VerticalAlignment="Top" Width="130" HorizontalAlignment="Left" FontSize="16" Margin="200,172,0,10">
+            <Label.Foreground>
+                <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ControlColorKey}}"/>
+            </Label.Foreground>
+        </Label>
 
     </Grid>
 </UserControl>
