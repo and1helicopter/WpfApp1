@@ -19,7 +19,7 @@ namespace WpfApp1
            // DelegateDate = DataUpdate;
             WindowState = WindowState.Maximized;
             tm = new TimerCallback(Data);
-            dateTimer = new Timer(tm, 0, 0, 1000);
+            _dateTimer = new Timer(tm, 0, 0, 1000);
 
         }
 
@@ -35,7 +35,7 @@ namespace WpfApp1
         }
 
         private TimerCallback tm;
-        private Timer dateTimer;
+        private Timer _dateTimer;
 
         private UserControl2 _uc2;
         private UserControl1 _uc1;
